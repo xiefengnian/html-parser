@@ -1,3 +1,7 @@
+// 兼容浏览器调试
+window = window ? window : {}
+
+
 var Tree = function(){
     var allNode = []
     var Node = function(parentNode,content){
@@ -199,11 +203,11 @@ var htmlParser = function(htmlString){
                 return true
             case 'input':
                 return true
-            default : 
+            default :
                 return false
         }
     }
-    
+
     var htmlCharArr = htmlString.split('')
     var tag = ''
     var text = ''
@@ -635,3 +639,7 @@ htmlParser(`
 </html>
 `)
 console.timeEnd('bp')
+
+// 兼容浏览器调试
+var exports = exports ? exports : {}
+exports.htmlParser = htmlParser
