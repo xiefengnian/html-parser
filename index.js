@@ -108,10 +108,10 @@ var Tree = function(){
         })
         return result
     }
-    this.getElementsByClassName = function(id){
+    this.getElementsByClassName = function(className){
         var result = []
         allNode.forEach(function(item){
-            if(item.attr.class == id){
+            if(item.attr.class == className){
                 result.push(item)
             }
         })
@@ -202,6 +202,28 @@ var htmlParser = function(htmlString){
             case 'br':
                 return true
             case 'input':
+                return true
+            case 'link':
+                return true
+            case 'base':
+                return true
+            case 'hr':
+                return true
+            case 'col':
+                return true
+            case 'area':
+                return true
+            case 'source':
+                return true
+            case 'param':
+                return true
+            case 'object':
+                return true
+            case 'applet':
+                return true
+            case 'embed':
+                return true
+            case 'keygen':
                 return true
             default :
                 return false
