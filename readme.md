@@ -8,7 +8,7 @@
 在你的主程序中，例如：
 
 `./server.js`
-```
+```js
 var htmlParser = require('html-parser')
 var html =
 `
@@ -33,7 +33,7 @@ a.getAttribute('class')                     //"link"
 ## 注意
 
 因为工作量还不够，现在标签不允许直接使用属性访问标签属性，需要使用getAttribute方法，例如：
-```
+```js
 //错误
 var a = doc.getElementsByClassName('link')[0]
 a.href //undefined
