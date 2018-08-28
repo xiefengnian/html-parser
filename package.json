@@ -1,0 +1,22 @@
+{
+  "name": "js-parse-html",
+  "version": "1.0.0",
+  "description": "提供在node中的html解析功能，用于爬虫程序的开发。 使用了简单常见的操作方式，类似于chrome等浏览器提供的DOM操作API。",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiefengnian/html-parser.git"
+  },
+  "author": "skipper_cn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiefengnian/html-parser/issues"
+  },
+  "homepage": "https://github.com/xiefengnian/html-parser#readme"
+}

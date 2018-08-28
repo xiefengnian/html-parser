@@ -1,15 +1,22 @@
-# HTML-parser
+# js-parse-html
 #### 一个简单的HTML解析器
 
 提供在node中的html解析功能，用于爬虫程序的开发。
 使用了简单常见的操作方式，类似于chrome等浏览器提供的DOM操作API。
 
 ## 如何使用
+
+安装
+
+```
+$ npm i js-parse-html
+```
+
 在你的主程序中，例如：
 
 `./server.js`
 ```js
-var htmlParser = require('html-parser')
+var htmlParser = require('js-parse-html')
 var html =
 `
     <p class="p1">
